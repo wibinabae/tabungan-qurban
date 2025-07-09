@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import StatCard from "@/components/StatCard.jsx"
+import Chart from "@/components/Chart.jsx"
 import { DollarSign, User } from "lucide-react";
 import {motion} from "framer-motion"
+
 const OverviewPage = () => {
   return (
     <div className="flex-2 overflow-auto relative z-10">
@@ -17,6 +19,10 @@ const OverviewPage = () => {
             <StatCard name="Total" icon={User} value="$ 100" />
             <StatCard name="Total" icon={User} value="$ 100" />
         </motion.div>
+
+        <div className="grid gr-cols-1 lg:grid-cols-2 gap-8">
+            <Chart />
+        </div>
       </main>
     </div>
   );
