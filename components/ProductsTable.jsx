@@ -16,7 +16,7 @@ const ProductsTable = () => {
     >
       <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-6 md:gap-0">
         <h2 className="text-lg md:text-xl font-semibold text-gray-100 text-center md:text-left">
-          Product List
+          Product Data
         </h2>
 
         <div className="relative w-full md:w-auto">
