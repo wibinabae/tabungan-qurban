@@ -44,24 +44,10 @@ const Sidebar = () => {
           <Menu size={24} className="text-white" />
         </button>
         <nav className="mt-8 flex-grow">
-          {/*{sidebarItems.map((item) => {
-            const IconComponent = ICONS[item.icon];
-            return (
-             <Link key={item.name} href={item.href}>
-                <div
-                  className={`flex items-center p-4 text-sm font-medium rounded-lg hover:bg-[#2f2f2f2f] transition-colors mb-2 ${
-                    pathname === item.href ? "bg-[#2f2f2f]" : ""
-                  }`}
-                >
-                  <IconComponent size={20} style={{ minWidth:"20px" }} />
-                  <span className="ml-4 whitespace-nowrap">{item.name}</span>
-                </div>
-              </Link>
-            
-            );
-          })}*/}
-          <a href="#" className="text-lg text-gray-400 font-bold hover:text-white flex mb-3"><Home size={24}/>{isSidebarOpen &&("Test")}</a>
-          <a href="#" className="text-lg text-gray-400 font-bold hover:text-white flex mb-3"><DollarSign size={24}/>{isSidebarOpen &&("Test")}</a>
+          <Link href="/profile"className="text-lg text-gray-400 font-bold hover:text-white flex mb-3"><Home size={24}/>{isSidebarOpen &&("Profile")}</Link>
+          <Link href="/about"className="text-lg text-gray-400 font-bold hover:text-white flex mb-3"><Home size={24}/>{isSidebarOpen &&("About")}</Link>
+     
+          
         </nav>
       </div>
     </div>
